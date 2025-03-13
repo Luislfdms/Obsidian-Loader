@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Obsidian_Loader.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            HorizontalOptions="Center">
+            <Image
+                Source="obsidian_loader_logo.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+            <Label
+                Text="Obsidian Loader"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <HorizontalStackLayout
+                Spacing="50"
+                HorizontalOptions="Center">
+                <VerticalStackLayout>
+                    <Image
+                        Source="google_drive_logo.png"
+                        HeightRequest="100"
+                        Aspect="AspectFit"
+                        SemanticProperties.Description="Google Drive Logo" />
+                    <Button
+                        Text="Connect to Google Drive"
+                        HorizontalOptions="Fill" />
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Image
+                        Source="obsidian_logo.png"
+                        HeightRequest="100"
+                        Aspect="AspectFit"
+                        SemanticProperties.Description="Obsidian Logo" />
+                    <Button
+                        Text="Choose Vault"
+                        HorizontalOptions="Fill" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
